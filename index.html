@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Pac-Man en JS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Conteneur principal du jeu -->
+  <div id="game-container">
+    <!-- Zone d'affichage du labyrinthe et des éléments du jeu -->
+    <div id="game-board">
+      <!-- Exemple d'élément Pac-Man -->
+      <div id="pacman"></div>
+    </div>
+    <!-- Tableau de bord affichant timer, score et vies -->
+    <div id="scoreboard">
+      <div id="timer">Temps: 00:00</div>
+      <div id="score">Score: 0</div>
+      <div id="lives">Vies: 3</div>
+    </div>
+    <!-- Menu de pause (initialement caché) -->
+    <div id="pause-menu" class="hidden">
+      <button id="continue">Continuer</button>
+      <button id="restart">Recommencer</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
